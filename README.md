@@ -22,7 +22,7 @@ brew install gcc
 ```
 
 ### Windows
-Download and install MSYS2 form the MSYS2 website
+Download and install MSYS2 from the MSYS2 website
 
 Install MinGW with
 ```bash
@@ -47,7 +47,7 @@ brew install make
 ### Windows
 It should have already been installed with GCC/G++ in the 'Install GCC/G++' section
 
-## Install OpenCV:
+## Install OpenCV
 
 ### Linux
 Install OpenCV with
@@ -55,7 +55,7 @@ Install OpenCV with
 sudo apt install libopencv-dev
 ```
 
-Install pkg-config with:
+Install pkg-config with
 ```bash
 sudo apt install pkg-config
 ```
@@ -65,7 +65,7 @@ Install OpenCV with
 ```bash
 brew install opencv
 ```
-Install pkg-config with:
+Install pkg-config with
 ```bash
 brew install pkg-config
 ```
@@ -89,22 +89,22 @@ Edit the appropriate makefile for your system
 2. add the appropriate paths for 'CC=' and 'CXX=' for your system if it is not already the case
 3. set 'OPENCV=1' for compiling with OpenCV or 'OPENCV=0' to not compile with OpenCV
 
-To run compile and run the Prim's algorithm, run this command:
+To run compile and run Prim's algorithm, run this command:
 ```bash
 make prim
 ```
 
-To run compile and run the Kruskal's algorithm, run this command:
+To run compile and run Kruskal's algorithm, run this command:
 ```bash
 make kruskal
 ```
 
-To run compile and run the Dijkstra algorithm, run this command:
+To run compile and run Dijkstra's algorithm, run this command:
 ```bash
 make dijkstra
 ```
 
-To find a route between different buildings for the the Dijkstra algorithm, edit the 'main.cpp' file and change the parameters of the line
+To find a route between different buildings for Dijkstra's algorithm, edit the 'main.cpp' file and change the parameters of the line
 ```c++
 searchOnCampus("SAEF", "GRAD");
 ```
