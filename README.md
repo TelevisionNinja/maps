@@ -1,6 +1,8 @@
 # maps
 This was a school project where I made a map of the university campus with the ability to find a route from one location to another.
 
+![dijkstra](./assets/dijkstra.png)
+
 # Install
 
 ## Install GCC/G++
@@ -28,6 +30,12 @@ Install MinGW with
 ```bash
 pacman -S mingw-w64-x86_64-toolchain
 ```
+or just these packages
+```bash
+pacman -S mingw-w64-x86_64-gcc
+pacman -S mingw-w64-x86_64-make
+```
+
 Add the binaries folder to the environment variables
 
 ## Install Make
@@ -71,7 +79,8 @@ brew install pkg-config
 ```
 
 ### Windows
-Download and install OpenCV from the OpenCV website
+#### OpenCV from source
+Download, install, and build OpenCV 3.4.13 from the OpenCV website
 
 Copy and paste the following files from
 ```
@@ -81,7 +90,14 @@ to the project folder:
 - libopencv_core3413.dll
 - libopencv_highgui3413.dll
 - libopencv_imgcodecs3413.dll
-- libopencv_imgproc3413.dll 
+- libopencv_imgproc3413.dll
+
+#### Or just use MSYS2
+The Qt version may vary
+```bash
+pacman -S mingw-w64-x86_64-opencv
+pacman -S mingw-w64-x86_64-qt6-base
+```
 
 # Build
 Edit the appropriate makefile for your system
